@@ -1,0 +1,30 @@
+{
+  "name": "print-img",
+  "version": "0.0.1",
+  "description": "Just print an image.",
+  "main": "print-img.js",
+  "scripts": {
+    "build": "uglifyjs print-img.js -m -c -o print-img.min.js",
+    "test": "mocha",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xovel/print-img.git"
+  },
+  "keywords": [
+    "print"
+  ],
+  "author": "xovel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xovel/print-img/issues"
+  },
+  "homepage": "https://github.com/xovel/print-img#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-zob": "0.0.4",
+    "eslint-plugin-zob": "0.0.2",
+    "mocha": "^6.2.0"
+  }
+}

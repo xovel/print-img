@@ -1,0 +1,19 @@
+extends:
+  - zob
+
+env:
+  amd: true
+  mocha: true
+  # browser: true
+
+globals:
+  printImg: true
+
+rules:
+  semi: 0
+  indent: 0
+  complexity: 0
+  no-control-regex: 0
+  no-cond-assign: 0
+  no-console: 0
+  no-extra-semi: 0

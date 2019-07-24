@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Print Img Demo</title>
+  <script src="./print-img.js"></script>
+  <style>
+  #container { padding: 5px; border: 1px solid #ddd; margin-bottom: 10px;}
+  #container:focus-within { border-color: #0665f3; }
+  #input {width: 100%; line-height: 2em; border: none; outline: none; }
+  </style>
+</head>
+<body>
+<div id="container">
+  <input id="input" placeholder="input src of img to print">
+</div>
+<button id="btn">Print</button>
+
+<script>
+document.getElementById('btn').onclick = function onPrint() {
+  var src = document.getElementById('input').value
+  if (src) {
+    printImg(src, {imgStyle: 'width: 100%;', wrapStyle: 'text-align: center;'})
+  }
+}
+</script>
+</body>
+</html>
