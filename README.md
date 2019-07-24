@@ -34,7 +34,6 @@ printImg(src, options)
 ...
 ```
 
-
 ## Options
 
 | name | type | note |
@@ -43,6 +42,12 @@ printImg(src, options)
 | imgStyle | string | style for image element |
 | wrapStyle | string | style for wrap div element |
 | style | string | style text for document |
+
+## Compatibility
+
+Follow [naturalWidth & naturalHeight image properties](https://caniuse.com/#feat=img-naturalwidth-naturalheight).
+
+Well tested in latest modern browsers include Chrome, Firefox, Edge and IE11.
 
 ## License
 
